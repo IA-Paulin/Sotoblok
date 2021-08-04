@@ -4,7 +4,7 @@ import numpy as np
 
 def binariz(file_name):
     img = cv.imread(file_name, cv.IMREAD_GRAYSCALE)
-    ret, th = cv.threshold(img, 20, 255, cv.THRESH_BINARY)  # 170
+    ret, th = cv.threshold(img, 128, 255, cv.THRESH_BINARY)  # 170
 
     # ret, th = cv.threshold(img, 130, 255, cv.THRESH_BINARY_INV)
 

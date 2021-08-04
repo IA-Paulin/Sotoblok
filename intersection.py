@@ -26,7 +26,7 @@ def intersection(img,lineA, lineB):
     AandB = a * d + b * c  # Скалярное произведение
     modAB = (a ** 2 + b ** 2) ** 0.5 * (d ** 2 + c ** 2) ** 0.5  # Произведение длин векторов
 
-    cos = AandB / modAB
+    cos = AandB / modAB # Тут происходит деление на 0!
     print('cos =', cos)
     print('a, b, d, c = ',a, b, d, c)
 

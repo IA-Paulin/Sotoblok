@@ -89,6 +89,10 @@ def main():
     ueye.is_SetFrameRate(hcam, 3, fps)
     print('fps = ', fps)
 
+    x = ueye.c_double(1)
+    y = ueye.c_double(0)
+    ueye.is_SetAutoParameter(hcam, ueye.IS_SET_ENABLE_AUTO_GAIN, x, y)
+
     print('*******************************************')
     print('width = ', width)
     print('height = ', height)
